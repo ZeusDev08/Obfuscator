@@ -5,7 +5,8 @@ const fs = require('fs')
 const functions = require('./funcs')
 const funcs = new functions()
 
-const macros = {} { // Load macros
+const macros = {} 
+{ // Load macros
     macros.MP_PROTECT = require('./obfuscate/macros/MP_PROTECT')
     macros.MP_CRASH = require('./obfuscate/macros/MP_CRASH')
     macros.MP_JUNK = require('./obfuscate/macros/MP_JUNK')
@@ -13,7 +14,8 @@ const macros = {} { // Load macros
     macros.MP_RANDOM = require('./obfuscate/macros/MP_RANDOM')
 }
 
-const mutations = {} { // Load mutation handlers
+const mutations = {} 
+{ // Load mutation handlers
     require('./obfuscate/mutations/BinaryExpression').init(mutations)
 }
 
